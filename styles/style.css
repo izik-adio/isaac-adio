@@ -13,3 +13,129 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+
+/* Certainly, let's outline the layout for Page 1: Home.
+
+### Page 1: Home
+
+#### Header Section (H1)
+
+- Font: Montserrat, 36px, Bold
+- Color: #003366
+- Margin: 20px top, 10px bottom
+
+#### Introduction Section
+
+- Background: #F5F5F5
+- Text Font: Roboto, 18px, Regular
+- Image:
+  - Place a high-quality image of yourself
+  - Centered
+  - Rounded corners for a friendly look
+
+#### Background Section
+
+- Background: #F5F5F5
+- Text Font: Roboto, 18px, Regular
+- Margin: 20px top, 20px bottom
+
+#### Call to Action Section
+
+- Button Background: #004080
+- Button Text: #FFFFFF
+- Font: Roboto, 18px, Regular
+- Padding: 10px horizontal, 8px vertical
+- Margin: 30px top, 0px bottom
+
+#### Navigation Bar
+
+- Font: Roboto, 16px, Regular
+- Color: #003366
+- Padding: 10px horizontal, 8px vertical
+- Display: Horizontal
+- Margin: 20px top, 0px bottom */
+
+/* Certainly! Let's outline the layout for Page 2: Skills & Projects.
+
+### Page 2: Skills & Projects
+
+#### Header Section (H1)
+
+- Font: Montserrat, 36px, Bold
+- Color: #003366
+- Margin: 20px top, 10px bottom
+
+#### Skills Section
+
+- Background: #FFFFFF
+- Text Font: Roboto, 18px, Regular
+- Margin: 20px top, 20px bottom
+
+#### Projects Section
+
+- Background: #FFFFFF
+- Text Font: Roboto, 18px, Regular
+- Margin: 20px top, 20px bottom
+
+#### Contact Form Section
+
+- Background: #FFFFFF
+- Form Labels Font: Roboto, 16px, Bold
+- Form Inputs Font: Roboto, 14px, Regular
+- Button Background: #004080
+- Button Text: #FFFFFF
+- Padding: 20px all around
+- Margin: 20px top, 0px bottom
+
+#### Navigation Bar
+
+- Font: Roboto, 16px, Regular
+- Color: #003366
+- Padding: 10px horizontal, 8px vertical
+- Display: Horizontal
+- Margin: 20px top, 0px bottom */
+
+/* Page 3: Tech Community
+Header Section (H1)
+Font: Montserrat, 36px, Bold
+Color: #003366
+Margin: 20px top, 10px bottom
+Favorite Coding-Related Websites Section
+Background: #F5F5F5
+Text Font: Roboto, 18px, Regular
+Link Color: #0066CC
+Margin: 20px top, 20px bottom
+Navigation Bar
+Font: Roboto, 16px, Regular
+Color: #003366
+Padding: 10px horizontal, 8px vertical
+Display: Horizontal
+Margin: 20px top, 0px bottom */
+
+/* Page 4: Project Gallery
+Header Section (H1)
+Font: Montserrat, 36px, Bold
+Color: #003366
+Margin: 20px top, 10px bottom
+Images of Projects Section
+Background: #FFFFFF
+
+Image Label Color: #666666
+
+Link Color: #004080
+
+Margin: 20px top, 20px bottom
+
+Image Grid (6 images):
+
+Display: 3 wide and 2 down
+Each Image:
+High-quality image related to the project
+Label with a brief description
+Clickable to open the source in a new window
+Navigation Bar
+Font: Roboto, 16px, Regular
+Color: #003366
+Padding: 10px horizontal, 8px vertical
+Display: Horizontal
+Margin: 20px top, 0px bottom */
