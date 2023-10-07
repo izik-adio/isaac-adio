@@ -47,6 +47,7 @@
   - List of technical skills you possess
 - **Section 2:** Projects
   - Showcase some of your projects with brief descriptions
+  - add a more button leading to page 4
 - **Section 3:** Contact Form
   - Text inputs for name and message
   - Checkbox for the purpose of contact
