@@ -2,9 +2,67 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #f5f5f5;
+  --text-color: #003366;
+  --cta-color: #004080;
+  --cta-text-color: #ffffff;
+  --hLarge-text: min(1.6rem + 5vw, 2.25rem);
+  --h-text: min(1rem + 2.5vw, 1.35rem);
+  --p-text: min(1rem + 1.5vw, 1.125rem);
+}
+
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+image,
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  margin-inline: auto;
+  width: min(96%, 94rem);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
+
 h1,
 h2,
 h3,
@@ -14,103 +72,363 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Certainly, let's outline the layout for Page 1: Home.
+h1 {
+  font-size: var(--hLarge-text);
+  color: var(--text-color);
+  margin: 1rem 0.7rem 0 0;
+}
+h1 + h3 {
+  font-size: var(--p-text);
+  margin-bottom: 1.5rem;
+}
 
-### Page 1: Home
+.intro {
+  padding: 1em 6vw;
+  margin-block: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: calc(1.2rem + 3vw);
+}
+.intro-text {
+  letter-spacing: 1px;
+  font-size: var(--p-text);
+  width: min(35rem, 100%);
+  max-width: 56rem;
+}
+.intro-img {
+  pointer-events: none;
+  transform: scale(1.1);
+  min-width: calc(15rem + 6vw);
+  border-radius: 50%;
+}
+.social {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
-#### Header Section (H1)
+.social img {
+  width: min(1rem + 3vw, 2.5rem);
+  margin: 0.6rem 0.3rem;
+  transition: transform 200ms;
+}
+.social img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
 
-- Font: Montserrat, 36px, Bold
-- Color: #003366
-- Margin: 20px top, 10px bottom
+@media only screen and (max-width: 650px) {
+  .social {
+    flex-direction: row;
+  }
+}
 
-#### Introduction Section
+.edu {
+  font-size: var(--h-text);
+}
+.edu-article {
+  padding: 0.6rem 0.8rem;
+}
+.edu-article h3 {
+  font-size: var(--h-text);
+  text-indent: 0.8rem;
+}
 
-- Background: #F5F5F5
-- Text Font: Roboto, 18px, Regular
-- Image:
-  - Place a high-quality image of yourself
-  - Centered
-  - Rounded corners for a friendly look
+.edu-flex {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
 
-#### Background Section
+.edu-flex section {
+  width: min(27rem, 90%);
+  min-height: 23rem;
+  padding: calc(1rem + 1vw) calc(1.5rem + 1.5vw);
+  margin-block: 1.4rem;
+  background-color: var(--text-color);
+  color: var(--cta-text-color);
+  border-radius: 1rem;
+}
+.short section {
+  min-height: 18rem;
+}
 
-- Background: #F5F5F5
-- Text Font: Roboto, 18px, Regular
-- Margin: 20px top, 20px bottom
+.uni {
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: var(--h-text);
+}
+.degree {
+  font-size: calc(var(--p-text) - 0.2vw);
+  opacity: 0.95;
+}
+.date {
+  text-indent: 1ch;
+  opacity: 0.75;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.edu-detail,
+.skill {
+  text-indent: 2ch;
+  margin-bottom: 1rem;
+}
 
-#### Call to Action Section
+.cta {
+  border: none;
+  outline: 0;
+  border-radius: 0.25rem;
+  background-color: var(--cta-color);
+  font-size: 1.125rem;
+  padding: 8px 10px;
+  float: right;
+}
+.cta a {
+  text-decoration: none;
+  color: var(--cta-text-color);
+  font-family: "Roboto", sans-serif;
+}
+footer {
+  margin-block: 4rem 2rem;
+}
 
-- Button Background: #004080
-- Button Text: #FFFFFF
-- Font: Roboto, 18px, Regular
-- Padding: 10px horizontal, 8px vertical
-- Margin: 30px top, 0px bottom
+footer nav ul {
+  width: 100%;
+  padding: 1rem;
+  margin-block: 2rem 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  list-style-type: none;
+}
+footer .box-sh {
+  padding: 0.3rem 0.6rem;
+  color: var(--text-color);
+  font-size: var(--p-text);
+  border-radius: 0.4rem;
+  box-shadow: 0.2em 0.2em 0.6em #003366d0;
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+}
 
-#### Navigation Bar
+.copyright {
+  display: block;
+  margin: 0.2rem auto calc(1rem - 0.3vw);
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--p-text);
+}
+.box-sh:hover {
+  box-shadow: 0.3em 0.3em 0.8em #003366d0;
+  transform: scale(1.1);
+  transition: box-shadow 500ms, transform 0.5s;
+}
 
-- Font: Roboto, 16px, Regular
-- Color: #003366
-- Padding: 10px horizontal, 8px vertical
-- Display: Horizontal
-- Margin: 20px top, 0px bottom */
+.skills-section,
+#projects {
+  background-color: var(--cta-text-color);
+  padding: calc(1rem + 1.5%) calc(2rem + 2%);
+  border-radius: 0.8rem;
+}
+.p2-header {
+  color: var(--text-color);
+  font-size: var(--h-text);
+}
+.extra-words {
+  text-indent: 2ch;
+  font-style: italic;
+  font-size: var(--p-text);
+}
 
-/* Certainly! Let's outline the layout for Page 2: Skills & Projects.
+.skills-heading-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  padding: 0.8rem 1.2rem 1.5rem;
+  margin: 1rem auto;
+  list-style-type: none;
+  border-radius: 0.6rem;
+}
+.skills-heading-list li {
+  font-size: calc(var(--h-text) - 1%);
+  width: clamp(11rem, 13rem + 6%, 100%);
+}
+.skills-list {
+  margin-left: 1.5rem;
+  max-height: 10rem;
+  gap: 0.6rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+}
+.skills-list li {
+  font-size: calc(var(--p-text) - 2%);
+}
 
-### Page 2: Skills & Projects
+#projects {
+  margin: 1rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.7rem;
+}
+.project-main {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.projects {
+  cursor: pointer;
+  padding: 0.8rem;
+  width: clamp(13rem, 13rem + 9%, 100%);
+  min-height: 10rem;
+  background-color: var(--background);
+  border-radius: 0.8rem;
+}
+.projects h3 {
+  margin-bottom: 0.4rem;
+  font-size: var(--h-text);
+}
+.projects p {
+  text-indent: 4ch;
+  font-size: var(--p-text);
+}
 
-#### Header Section (H1)
+#contact {
+  width: min(25rem, 100%);
+  background-color: var(--cta-text-color);
+  padding: 1rem 1.25rem 1.25rem;
+  border-radius: 0.8rem;
+  margin: 3rem auto 0px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1.5rem 1.8rem;
+  border-radius: 0.8rem;
+}
+#contact label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.single-input input,
+.single-input textarea {
+  margin: 0.2rem auto;
+  display: block;
+  width: 80%;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.single-input,
+.check-input {
+  display: flex;
+  width: 100%;
+  margin-left: 0.8rem;
+  flex-flow: column nowrap;
+  margin-bottom: 0.8rem;
+}
 
-- Font: Montserrat, 36px, Bold
-- Color: #003366
-- Margin: 20px top, 10px bottom
+.check-inputs {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.cta-btn {
+  font-size: var(--p-text);
+  margin: 1rem auto 0.2rem;
+  width: 60%;
+  cursor: pointer;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--cta-color);
+  color: var(--cta-text-color);
+  border-radius: 0.8rem;
+  border: none;
+  outline: 0;
+}
 
-#### Skills Section
+.p3 {
+  width: min(65rem, 96%);
+  margin: 2rem auto;
+  background-color: var(--cta-text-color);
+  font-size: var(--p-text);
+  padding: var(--p-text) var(--h-text);
+  border-radius: 0.8rem;
+}
+.p3-h2 {
+  text-align: center;
+  max-width: 80%;
+  margin-inline: auto;
+}
+.p3-p {
+  max-width: 98%;
+  text-align: center;
+  font-size: var(--p-text);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
 
-- Background: #FFFFFF
-- Text Font: Roboto, 18px, Regular
-- Margin: 20px top, 20px bottom
-
-#### Projects Section
-
-- Background: #FFFFFF
-- Text Font: Roboto, 18px, Regular
-- Margin: 20px top, 20px bottom
-
-#### Contact Form Section
-
-- Background: #FFFFFF
-- Form Labels Font: Roboto, 16px, Bold
-- Form Inputs Font: Roboto, 14px, Regular
-- Button Background: #004080
-- Button Text: #FFFFFF
-- Padding: 20px all around
-- Margin: 20px top, 0px bottom
-
-#### Navigation Bar
-
-- Font: Roboto, 16px, Regular
-- Color: #003366
-- Padding: 10px horizontal, 8px vertical
-- Display: Horizontal
-- Margin: 20px top, 0px bottom */
-
-/* Page 3: Tech Community
-Header Section (H1)
-Font: Montserrat, 36px, Bold
-Color: #003366
-Margin: 20px top, 10px bottom
-Favorite Coding-Related Websites Section
-Background: #F5F5F5
-Text Font: Roboto, 18px, Regular
-Link Color: #0066CC
-Margin: 20px top, 20px bottom
-Navigation Bar
-Font: Roboto, 16px, Regular
-Color: #003366
-Padding: 10px horizontal, 8px vertical
-Display: Horizontal
-Margin: 20px top, 0px bottom */
+.links-list {
+  background-color: var(--background);
+  list-style-type: none;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--p-text);
+}
+.links-list li {
+  cursor: pointer;
+  padding: 0.8rem;
+  width: clamp(13rem, 13rem + 9%, 100%);
+  min-height: 10rem;
+  border-radius: 0.4rem;
+  background-color: var(--cta-text-color);
+  padding: 0.5rem 1rem;
+}
+.link-contaier {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+.link-header {
+  display: block;
+  font-size: var(--h-text);
+  color: #0066cc;
+  font-family: "Montserrat", sans-serif;
+}
+.link-description {
+  text-indent: 2ch;
+  font-family: "Robo", sans-serif;
+  font-size: var(--p-text);
+}
 
 /* Page 4: Project Gallery
 Header Section (H1)

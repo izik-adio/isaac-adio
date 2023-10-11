@@ -42,16 +42,17 @@
     <header>
       <h1>Skills & Projects</h1>
     </header>
+
     <main>
-      <h2>Skills</h2>
-      <p>
-        Here's a snapshot of the technical skills I bring to the coding table:
-      </p>
-      <section>
-        <ul>
+      <section class="skills-section">
+        <h2 class="p2-header">Skills</h2>
+        <p class="extra-words">
+          Here's a snapshot of the technical skills I bring to the coding table:
+        </p>
+        <ul class="skills-heading-list">
           <li>
             Languages:
-            <ul>
+            <ul class="skills-list">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript</li>
@@ -61,7 +62,7 @@
 
           <li>
             Frameworks & Libraries:
-            <ul>
+            <ul class="skills-list">
               <li>ReactJS</li>
               <li>jQuery</li>
               <li>Express</li>
@@ -71,21 +72,21 @@
 
           <li>
             Design Tools:
-            <ul>
+            <ul class="skills-list">
               <li>Figma</li>
             </ul>
           </li>
 
           <li>
             Version Control:
-            <ul>
+            <ul class="skills-list">
               <li>Git</li>
             </ul>
           </li>
 
           <li>
             Operating Systems:
-            <ul>
+            <ul class="skills-list">
               <li>Linux</li>
               <li>Windows</li>
             </ul>
@@ -93,64 +94,65 @@
 
           <li>
             Development Tools:
-            <ul>
+            <ul class="skills-list">
               <li>Visual Studio Code</li>
               <li>PyCharm Editor</li>
               <li>CodePen</li>
             </ul>
           </li>
         </ul>
-        <p>
+        <p class="extra-words">
           This is just a glimpse; there's always room on my learning curve for
           more!
         </p>
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="p2-header">Projects</h2>
+        <div class="project-main">
+          <section class="projects">
+            <h3>Project 1: [Project Name]</h3>
+            <p>
+              Description: A captivating project where I [brief description].
+              This project showcases my skills in [relevant technologies]. Check
+              it out on [GitHub/Link].
+            </p>
+          </section>
 
-        <section class="projects">
-          <h3>Project 1: [Project Name]</h3>
-          <p>
-            Description: A captivating project where I [brief description]. This
-            project showcases my skills in [relevant technologies]. Check it out
-            on [GitHub/Link].
-          </p>
-        </section>
+          <section class="projects">
+            <h3>Project 2: [Project Name]</h3>
+            <p>
+              Description: Dive into the world of [brief description]. This
+              project demonstrates my proficiency in [technologies used]. Find
+              the code on [GitHub/Link].
+            </p>
+          </section>
 
-        <section class="projects">
-          <h3>Project 2: [Project Name]</h3>
-          <p>
-            Description: Dive into the world of [brief description]. This
-            project demonstrates my proficiency in [technologies used]. Find the
-            code on [GitHub/Link].
-          </p>
-        </section>
+          <section class="projects">
+            <h3>Project 3: [Project Name]</h3>
+            <p>
+              Description: Explore the magic of [brief description]. In this
+              project, I showcased my skills in [relevant technologies].
+              Discover more on [GitHub/Link].
+            </p>
+          </section>
 
-        <section class="projects">
-          <h3>Project 3: [Project Name]</h3>
-          <p>
-            Description: Explore the magic of [brief description]. In this
-            project, I showcased my skills in [relevant technologies]. Discover
-            more on [GitHub/Link].
-          </p>
-        </section>
+          <section class="projects">
+            <h3>Project 4: [Project Name]</h3>
+            <p>
+              Description: Uncover the beauty of [brief description]. This
+              project is a testament to my expertise in [technologies applied].
+              Visit [GitHub/Link] for a closer look. More
+            </p>
+          </section>
+        </div>
 
-        <section class="projects">
-          <h3>Project 4: [Project Name]</h3>
-          <p>
-            Description: Uncover the beauty of [brief description]. This project
-            is a testament to my expertise in [technologies applied]. Visit
-            [GitHub/Link] for a closer look. More
-          </p>
-        </section>
-
-        <p>
+        <p class="extra-words">
           Projects Await! Curious about more projects? Click the "More" button
           below to explore a diverse array of coding adventures
         </p>
 
-        <button>
+        <button class="cta-btn box-sh">
           <a href="./project-gallery.html">More Projects</a>
         </button>
       </section>
@@ -158,7 +160,7 @@
       <section id="contact">
         <form action="">
           <fieldset>
-            <legend>Contact Izik</legend>
+            <legend class="p2-header">Contact Izik</legend>
 
             <div class="single-input">
               <label for="name">Name:</label>
@@ -166,56 +168,83 @@
             </div>
 
             <div class="single-input">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="single-input">
               <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
             </div>
 
             <div class="check-input">
-              <label for="purpose"
-                >Purpose of Contact:
-                <input
-                  type="checkbox"
-                  id="purpose"
-                  name="purpose"
-                  value="programming"
-                  checked
-                />
-                Programming
-                <input
-                  type="checkbox"
-                  id="purpose"
-                  name="purpose"
-                  value="collaboration"
-                />
-                Collaboration
-                <input
-                  type="checkbox"
-                  id="purpose"
-                  name="purpose"
-                  value="other"
-                />
-                Other
-              </label>
+              <h3>Purpose of Contact:</h3>
+              <div class="check-inputs">
+                <label for="purpose"
+                  ><input
+                    type="radio"
+                    id="purpose"
+                    name="purpose"
+                    value="programming"
+                    checked
+                  />
+                  Programming</label
+                >
+
+                <label for="purpose"
+                  ><input
+                    type="radio"
+                    id="purpose"
+                    name="purpose"
+                    value="collaboration"
+                  />
+                  Collaboration</label
+                >
+                <label for="purpose"
+                  ><input
+                    type="radio"
+                    id="purpose"
+                    name="purpose"
+                    value="other"
+                  />
+                  Other</label
+                >
+              </div>
             </div>
 
-            <button type="submit">Submit</button>
+            <button class="cta-btn box-sh" type="submit">Submit</button>
           </fieldset>
         </form>
       </section>
-
-
     </main>
+
+    <!-- footer -->
     <footer>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Contact</li>
-          <li>Tech Community</li>
-          <li>Project Gallery</li>
+          <li class="box-sh"><a href="../index.html">Home</a></li>
+          <li class="box-sh">
+            <a href="./skill-project.html">Skills</a>
+          </li>
+          <li class="box-sh">
+            <a href="./skill-project.html#contact">Contact</a>
+          </li>
+          <li class="box-sh">
+            <a href="./tech-community.html">Tech Community</a>
+          </li>
+          <li class="box-sh">
+            <a href="./project-gallery.html">Project Gallery</a>
+          </li>
         </ul>
       </nav>
-      <p>&copy; 2023 Isaac Adio (Izik). All rights reserved.</p>
+      <p class="copyright">
+        &copy; 2023 <em> Isaac&nbsp;Adio</em> (Izik). All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

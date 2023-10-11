@@ -42,107 +42,121 @@
     <header>
       <h1>Isaac Adio.</h1>
       <h3>Web Developer and Software Engineer.</h3>
-      <img class="intro-img" src="./imgs/isaac.jfif" alt="Isaac Image" />
-      <p class="intro-text">
-        Hi there! I'm Izik, an enthusiastic My journey in the world of
-        programming is fueled by curiosity and a relentless pursuit of
-        knowledge. Let's embark on this coding adventure together!
-      </p>
+      <section class="intro">
+        <img class="intro-img" src="./imgs/isaac.jfif" alt="Isaac Image" />
+
+        <div class="social">
+          <a href="http://"><img src="./svgs/git.svg" alt="" /></a>
+          <a href="http://"><img src="./svgs/twitter.svg" alt="" /></a>
+          <a href="http://"><img src="./svgs/link.svg" alt="" /></a>
+          <a href="http://"><img src="./svgs/yout.svg" alt="" /></a>
+          <a href="http://"><img src="./svgs/gmail.svg" alt="" /></a>
+        </div>
+
+        <p class="intro-text">
+          Hi there! I'm Izik, an enthusiastic software engineer. My journey in
+          the world of programming is fueled by curiosity and a relentless
+          pursuit of knowledge. Let's embark on this coding adventure together!
+        </p>
+      </section>
     </header>
+
     <main>
-      <h2>Background</h2>
-      <article class="edu">
-        <h3>Education</h3>
-        <section>
-          <h4 class="uni">University of the People</h4>
-          <h5 class="degree">Bachelor's degree, Computer Science</h5>
-          <h6 class="date">September 2023 - Present</h6>
-          <p class="edu-detail">
-            I'm currently immersed in the dynamic world of Computer Science at
-            the University of the People. This journey is not just about
-            obtaining a degree; it's about honing my programming skills and
-            staying at the forefront of technology trends. The coursework equips
-            me with a strong foundation in computer science principles, ready to
-            be applied to real-world projects. The tech industry's possibilities
-            excite me, and I look forward to contributing my knowledge and
-            skills to AI and ML development in the future.
-          </p>
-        </section>
-      </article>
+      <h2 class="edu">Education</h2>
 
-      <article class="self-l">
-        <h3>Self-Learning Adventures</h3>
-        <h4 class="uni">University of Self-Learning</h4>
-
-        <section>
-          <h5 class="degree">Self-Taught Python Programmer</h5>
-          <h6 class="date">September 2022 - March 2023</h6>
-          <p class="edu-detail">
-            I embarked on a self-motivated learning journey, diving deep into
-            the world of Python. Proficiency came through various resources,
-            including self-study and Angela Yu's '100 Days of Python' course.
-          </p>
-          <p class="skill">
-            Skills acquired: Python, Problem Solving with Python, Web Scraping,
-            Python Scripting, Debugging in Python and
-            <a href="http://" target="_blank">More</a>
-          </p>
-        </section>
-
-        <section>
-          <h5 class="degree">Front-End Web Development Basics</h5>
-          <h6 class="date">January 2023 - June 2023</h6>
-          <p class="edu-detail">
-            As a self-driven front-end developer, I delved into HTML, CSS, and
-            JavaScript. The journey evolved into mastery of responsive design
-            and cross-browser compatibility. My commitment to delivering
-            pixel-perfect, interactive web interfaces is unwavering. Continuous
-            learning is my ethos, pushing the boundaries of creativity and
-            functionality in web development.
-          </p>
-          <p class="skill">
-            Skills showcased: HTML5, Cross-browser Compatibility, JavaScript,
-            Responsive Web Design, CSS, Front-End Development, Debugging
-            Front-End Issues, jQuery
-
-            <a href="http://" target="_blank">More</a>
-          </p>
-        </section>
-      </article>
-
-      <article class="current-e">
+      <article class="edu-article">
         <h3>Current Endeavors</h3>
-        <section>
-          <h4 class="uni">App Academy Open</h4>
-          <h5 class="degree">Bachelor's degree, Computer Science</h5>
-          <h6 class="date">September 2023 - Present</h6>
-          <p class="edu-detail">
-            Currently enrolled in App Academy Open, a self-paced web development
-            program transforming me into a Full-stack Web Developer. Mastering
-            JavaScript, Python, SQL, HTML, and CSS, I'llLearn how to accelerate
-            projects with tools like ReactJS, Express, Flask, and SQL Alchemy.
-            The learning is astounding, and I can't wait to apply these skills –
-            employers will be impressed.
-          </p>
-        </section>
+        <div class="edu-flex">
+          <section class="box-sh">
+            <h4 class="uni">University of the People</h4>
+            <h5 class="degree">Bachelor's degree, Computer Science</h5>
+            <h6 class="date">September 2023 - Present</h6>
+            <p class="edu-detail">
+              I'm currently immersed in the dynamic world of Computer Science at
+              the University of the People. This journey is not just about
+              obtaining a degree; it's about honing my programming skills and
+              staying at the forefront of technology trends. The coursework
+              equips me with a strong foundation in computer science principles,
+              ready to be applied to real-world projects.
+            </p>
+          </section>
+          <section class="box-sh">
+            <h4 class="uni">App Academy Open</h4>
+            <h5 class="degree">Full-stack Web Development</h5>
+            <h6 class="date">September 2023 - Present</h6>
+            <p class="edu-detail">
+              Currently enrolled in App Academy Open, a self-paced web
+              development program transforming me into a Full-stack Web
+              Developer. Mastering JavaScript, Python, SQL, HTML, and CSS,
+              I'llLearn how to accelerate projects with tools like ReactJS,
+              Express, Flask, and SQL Alchemy. The learning is astounding, and I
+              can't wait to apply these skills – employers will be impressed.
+            </p>
+          </section>
+        </div>
       </article>
-      <button>
-        <a href="./pages/skill-project.html">Explore My Skills and projects</a>
+
+      <article class="edu-article">
+        <h3>Self-Learning Adventures</h3>
+
+        <div class="edu-flex short">
+          <section class="box-sh">
+            <h4 class="degree">Python Programming Basics</h4>
+            <h5 class="date">September 2022 - March 2023</h5>
+            <p class="edu-detail">
+              I embarked on a self-motivated learning journey, diving deep into
+              the world of Python. Proficiency came through various resources,
+              including self-study and Youtube Videos.
+            </p>
+            <p class="skill">
+              Skills acquired: Python, Problem Solving with Python, Web
+              Scraping, Python Scripting, Debugging in Python.
+            </p>
+          </section>
+
+          <section class="box-sh">
+            <h4 class="degree">Front-End Web Development Basics</h4>
+            <h5 class="date">January 2023 - June 2023</h5>
+            <p class="edu-detail">
+              I delved into HTML, CSS, and JavaScript. The journey evolved into
+              mastery of responsive design and cross-browser compatibility.
+            </p>
+            <p class="skill">
+              Skills showcased: HTML5, Cross-browser Compatibility, JavaScript,
+              Responsive Web Design, CSS, Front-End Development, Debugging
+              Front-End Issues, jQuery.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <button class="box-sh cta">
+        <a href="./pages/skill-project.html"
+          >Explore My Skills and projects ></a
+        >
       </button>
     </main>
+
     <footer>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Contact</li>
-          <li>Tech Community</li>
-          <li>Project Gallery</li>
+          <li class="box-sh"><a href="./index.html">Home</a></li>
+          <li class="box-sh">
+            <a href="./pages/skill-project.html">Skills</a>
+          </li>
+          <li class="box-sh">
+            <a href="./pages/skill-project.html#contact">Contact</a>
+          </li>
+          <li class="box-sh">
+            <a href="./pages/tech-community.html">Tech Community</a>
+          </li>
+          <li class="box-sh">
+            <a href="./pages/project-gallery.html">Project Gallery</a>
+          </li>
         </ul>
       </nav>
-      <p>
-        &copy; 2023 <strong><em>Isaac Adio</em></strong> (Izik). All rights
-        reserved.
+      <p class="copyright">
+        &copy; 2023 <em> Isaac&nbsp;Adio</em> (Izik). All rights reserved.
       </p>
     </footer>
   </body>
