@@ -24,6 +24,7 @@ html,
 html:focus-within {
   scroll-behavior: smooth;
 }
+
 html,
 body {
   height: 100%;
@@ -33,6 +34,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 image,
 img,
 picture,
@@ -423,37 +425,45 @@ fieldset {
   font-size: var(--h-text);
   color: #0066cc;
   font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
 }
 .link-description {
   text-indent: 2ch;
-  font-family: "Robo", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--p-text);
 }
 
-/* Page 4: Project Gallery
-Header Section (H1)
-Font: Montserrat, 36px, Bold
-Color: #003366
-Margin: 20px top, 10px bottom
-Images of Projects Section
-Background: #FFFFFF
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: var(--cta-text-color);
+  color: var(--cta-color);
+  margin: 20px auto 10px;
+}
+.project {
+  border-radius: 0.6rem;
+  background-color: var(--background);
+  max-width: 18rem;
+  padding: 0.6rem 1rem;
+}
+.project-header {
+  font-size: var(--p-text);
+  color: #030024ea;
+}
+.project-detail {
+  text-indent: 2ch;
+  font-size: calc(var(--p-text) - 0.125rem);
+}
 
-Image Label Color: #666666
-
-Link Color: #004080
-
-Margin: 20px top, 20px bottom
-
-Image Grid (6 images):
-
+/*
 Display: 3 wide and 2 down
 Each Image:
 High-quality image related to the project
 Label with a brief description
 Clickable to open the source in a new window
-Navigation Bar
-Font: Roboto, 16px, Regular
-Color: #003366
-Padding: 10px horizontal, 8px vertical
-Display: Horizontal
-Margin: 20px top, 0px bottom */
+*/
